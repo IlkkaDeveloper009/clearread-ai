@@ -38,6 +38,7 @@ ClearRead AI transforms overwhelming educational texts or PDF documents into an 
    cd clearread-ai
    ```
 
+
 2. **Install dependencies:**
    ```bash
    pip install -r requirements.txt
