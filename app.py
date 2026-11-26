@@ -27,7 +27,9 @@ class AdaptedMaterial(BaseModel):
 # 3. Sidebar: Settings & Accessibility
 with st.sidebar:
     st.header("⚙️ Settings")
-    api_key = st.text_input("Enter your Gemini API Key:", type="password")
+    default_key = st.secrets.get("GEMINI_API_KEY", "")
+api_key = st.text_input("Gemini API Key (Pre-loaded for demo, or enter yours):", value=default_key, type="password")
+
     
     st.divider()
     st.subheader("👁️ Accessibility Modes")
