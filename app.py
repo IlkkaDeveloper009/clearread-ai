@@ -28,7 +28,8 @@ class AdaptedMaterial(BaseModel):
 with st.sidebar:
     st.header("⚙️ Settings")
     default_key = st.secrets.get("GEMINI_API_KEY", "")
-api_key = st.text_input("Gemini API Key (Pre-loaded for demo, or enter yours):", value=default_key, type="password")
+    api_key = st.text_input("Gemini API Key (Pre-loaded for demo, or enter yours):", value=default_key, type="password")
+
 
     
     st.divider()
